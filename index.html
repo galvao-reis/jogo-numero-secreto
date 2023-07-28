@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Número Secreto</title>
+</head>
+<body>
+    <main>
+
+        <h1 class='main__title'>Acerte o Número Secreto</h1>
+        
+        <h3 class="main__subtitle">O número secreto está entre: <br> <span id="min-value">0</span> e <span id="max-value">100</span></h3>
+        
+        <div id="guess" class="message">
+            <!-- <div class="message__u-said">Você disse:</div> -->
+            <!-- <span class="message__box">20</span> -->
+            <!-- <div class="message__text">O número secreto é <b id="bold">maior</b> <i class="fa-solid fa-arrow-turn-up"></i></div> -->
+            <!-- <i class="fa-solid fa-arrow-turn-down"></i> -->
+        </div>
+
+        <div class="sample__display">
+            <span>COLORS SAMPLE</span>
+            <div class="colors-sample">
+                <div class="c1"></div>
+                <div class="c2"></div>
+                <div class="c3"></div>
+                <div class="c4"></div>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <p> Este jogo funciona utilizando o microfone. </p>
+            <p> Devido à isto, alguns browsers podem não funcionar adequadamente.</p>
+            <p> Recomenda-se utilizar Google Chrome para a melhor experiência.</p>
+        </div>
+    </main>
+    
+    <script src="./js/sort_random.js"></script>
+    <script src="/js/speech_recog.js"></script>
+    <script src="./js/validation.js"></script>
+
+</body>
+</html>

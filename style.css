@@ -1,0 +1,150 @@
+:root{
+    --bg-color:#FFFAE3;
+    --color2:#3B8EA5;
+    --offblack:#403a4c;
+    --color4:#F7567C;
+    --offwhite:#efefef;
+
+    --main_font:'Rubik',sans-serif;
+}
+
+
+main{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: var(--main_font);
+    font-weight: 300;
+    text-align: center;
+
+    color: var(--offblack);
+    background: radial-gradient(circle at 90vw 40vh, var(--offwhite),var(--bg-color) 25%, var(--bg-color) 75%, var(--offwhite) 100% );
+
+
+}
+
+.main__title{
+    font-size: 3.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    background-color: var(--color2);
+    color: var(--offwhite);
+
+    padding: .25em 2em;
+    /* border: 5px var(--offwhite) solid; */
+    border-radius: 1.5em;
+    /* margin-bottom: .5em; */
+
+}
+
+
+.main__subtitle{
+    font-size:2em;
+    margin: 1em;
+    font-weight: 400;
+}
+
+#min-value, #max-value{
+    font-weight: 600;
+}
+
+.message{
+    font-size: 1.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message__box{
+    /* width: 2em; */
+    /* height: 2em; */
+    font-size: 2em;
+    font-weight: 400;
+    background-color: var(--color4);
+    padding: .5em .5em;
+    border-radius: .25em;
+    margin: .25em;
+    
+    color: var(--offwhite);
+}
+
+.message__text{
+    font-size: .8em;
+}
+
+#bold{
+    font-weight: 400;
+    
+}
+
+
+
+.reset-button{
+    font-family: var(--main_font);
+    font-weight: 400;
+    font-size: 1.125em;
+
+    margin-top: 1em;
+    border: none;
+    border-radius: 1em;
+    padding: 1.5em;
+    
+    background-color: var(--offblack);
+    color: var(--offwhite);
+}
+
+.disclaimer{
+    position: absolute;
+    bottom: 1em;
+}
+
+
+.sample__display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: var(--offwhite) .5em solid;
+    border-radius: 5em;
+    text-align: center;
+    margin: 2em;
+
+    display:none;
+    }
+    
+    
+    
+.colors-sample{
+    /* margin: 5em; */
+    /* width: 25vw; */
+    padding:1em;
+    /* background-color: var(--bg-color); */
+    display: flex;
+    justify-content: space-around;
+        
+    
+}
+    
+    
+.c1,.c2,.c3,.c4{
+    padding: 2.5em 5em;
+}
+
+.c1{
+    background-color: var(--color2);
+}
+.c2{
+    background-color:var(--offblack);
+}
+.c3{
+    background-color: var(--color4);
+}
+.c4{
+    background-color: var(--offwhite);
+}
